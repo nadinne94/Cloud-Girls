@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script>
+		
+		/*function pulaLinha(){
+			document.write("<br><br>")
+		}
+
+		function mostra(frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+		alert("Calcule a pontuação do seu time: ");
+
+		var nomeTime = prompt("Digite o nome do seu time: ");
+
+		var vitorias = parseInt(prompt("Digite o número de vitórias: "));
+
+		var empates = parseInt(prompt("Digite o número de empates: "));
+
+		var pontos = (vitorias * 3) + empates;
+
+		mostra("A pontuação do seu time (" + nomeTime + ") é : " + pontos);
+
+		if(pontos > 28){
+			mostra("A pontuação atual é maior do que o ano passado!");
+		}
+
+		if(pontos < 28){
+			mostra("A pontuação atual é menor do que o ano passado!");
+		} 
+
+		if(pontos == 28) {
+			mostra(" A pontuação é igual a do ano passado");
+		}*/
+
+		/*function pulaLinha(){
+
+			document.write("<br>");
+		}
+
+		function mostra(frase){
+			
+			document.write(frase);
+			pulaLinha();
+		}
+
+    		
+    		var contador = 2;
+    		
+    			while(contador <= 100){
+    		
+    				mostra(contador);
+
+    				contador = contador + 2;
+    			} 
+    		
+
+    		mostra("FIM");*/
+
+		function pulaLinha(){
+
+			document.write("<br>");
+		}
+
+		function mostra(frase){
+					
+			document.write(frase);
+			pulaLinha();
+		}
+
+		    		
+		    /*var contador = 30;
+		    		
+		    	while(contador <= 40){
+		    		
+		    		if(contador == 33) {
+
+		    			contador = contador + 1;
+		    		} 
+		    			else if (contador == 37){
+
+		    				contador = contador + 1;
+		    		}
+
+		    				else {		
+
+		    					mostra(contador);
+		    					contador = contador + 1;
+		    				}
+		    	} 
+		    		
+
+		    	mostra("FIM");*/
+
+		/*var contador = 20;
+
+    while( contador >= 0) {
+
+      mostra(contador);
+      contador = contador - 1;
+    }
+
+    mostra("FIM");*/
+
+		var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maximoTentativas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentativas) {
+
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+            alert("Bem-vindo ao sistema, " + loginInformado);
+
+            tentativaAtual = maximoTentativas; // acertou, então faço o gasto de todas as tentativas para sair do loop. Lá embaixo vai incrementar + 1! 
+
+        } else {
+
+            if (tentativaAtual == 3) {
+                alert("Número permitido de tentativas ultrapassado!");
+            } else {
+                alert("Login inválido. Tente novamente");
+            }
+        }
+
+       // vai para a próxima tentativa
+        tentativaAtual = tentativaAtual +1  
+    }
+
+    	
+	
+
+	</script>
+
+</body>
+</html>

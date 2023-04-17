@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+
+	<script>
+		
+		/*function pulaLinha(){
+			document.write("<br><br>")
+		}
+
+		function mostra(frase){
+			document.write(frase);
+			pulaLinha();
+		}
+
+		alert("Calcule a pontuação do seu time: ");
+
+		var nomeTime = prompt("Digite o nome do seu time: ");
+
+		var vitorias = parseInt(prompt("Digite o número de vitórias: "));
+
+		var empates = parseInt(prompt("Digite o número de empates: "));
+
+		var pontos = (vitorias * 3) + empates;
+
+		mostra("A pontuação do seu time (" + nomeTime + ") é : " + pontos);
+
+		if(pontos > 28){
+			mostra("A pontuação atual é maior do que o ano passado!");
+		}
+
+		if(pontos < 28){
+			mostra("A pontuação atual é menor do que o ano passado!");
+		} 
+
+		if(pontos == 28) {
+			mostra(" A pontuação é igual a do ano passado");
+		}*/
+
+		function pulaLinha(){
+
+			document.write("<br><br>");
+		}
+
+		function mostra(frase){
+			
+			document.write(frase);
+			pulaLinha();
+		}
+
+		function calculaIMC(altura,peso ) {
+
+			return peso / (altura * altura);
+		}
+
+		alert("Calcule o seu IMC! ");
+
+		var nome = prompt("Digite seu nome: ");
+
+		var alturaInformada = prompt(nome + ", digite sua altura: ");
+		var pesoInformado = prompt(nome + ", digite seu peso: ");
+
+
+		var imc = calculaIMC(alturaInformada,pesoInformado);
+
+
+		mostra("Dados: ");
+		mostra("Nome: " + nome + ";");
+		mostra("Altura: " + alturaInformada + "m;");
+		mostra("Peso: " + pesoInformado + "kg;");
+		mostra("IMC: " + Math.round(imc));
+
+	
+			if(imc < 18.5){
+
+			mostra(nome +", você está abaixo do recomendado!");
+		}
+
+		if(imc > 35){
+
+			mostra(nome +",  você está acima do recomendado!");
+		}
+
+		if(imc >= 18.5 && imc < 35){
+			
+			mostra(nome +",  você está dentro da faixa recomendada!");
+		}
+
+
+	</script>
+
+</body>
+</html>
